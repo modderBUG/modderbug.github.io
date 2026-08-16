@@ -1,1 +1,436 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel=icon href=/favicon.ico><title>Apwonderland Tensorflow Hub Demo Application</title><link href=/static/css/app.fa0ee60e.css rel=preload as=style><link href=/static/css/chunk-elementUI.68c70ad5.css rel=preload as=style><link href=/static/css/chunk-libs.3dfb7769.css rel=preload as=style><link href=/static/js/app.31166acd.js rel=preload as=script><link href=/static/js/chunk-elementUI.cb459a4a.js rel=preload as=script><link href=/static/js/chunk-libs.47b8d5ae.js rel=preload as=script><link href=/static/css/chunk-elementUI.68c70ad5.css rel=stylesheet><link href=/static/css/chunk-libs.3dfb7769.css rel=stylesheet><link href=/static/css/app.fa0ee60e.css rel=stylesheet></head><body><noscript><strong>We're sorry but Apwonderland Tensorflow Hub Demo Application doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script>(function(e){function n(n){for(var c,r,a=n[0],d=n[1],f=n[2],i=0,h=[];i<a.length;i++)r=a[i],Object.prototype.hasOwnProperty.call(u,r)&&u[r]&&h.push(u[r][0]),u[r]=0;for(c in d)Object.prototype.hasOwnProperty.call(d,c)&&(e[c]=d[c]);l&&l(n);while(h.length)h.shift()();return o.push.apply(o,f||[]),t()}function t(){for(var e,n=0;n<o.length;n++){for(var t=o[n],c=!0,r=1;r<t.length;r++){var a=t[r];0!==u[a]&&(c=!1)}c&&(o.splice(n--,1),e=d(d.s=t[0]))}return e}var c={},r={runtime:0},u={runtime:0},o=[];function a(e){return d.p+"static/js/"+({}[e]||e)+"."+{"chunk-238c903c":"f0cb0168","chunk-26600eb3":"7487fa11","chunk-2d0c8bf7":"ea740f96","chunk-2d0cfaef":"b19ff60c","chunk-2d0d0f79":"8d815dd4","chunk-2d0e4b0c":"aeeeef15","chunk-2d0e4e1f":"c20f640b","chunk-2d0e944c":"e608e253","chunk-2d2104c6":"c72ac5d2","chunk-2d226cab":"cb7daee4","chunk-2d229205":"3d087ddc","chunk-3dcd0324":"44b630b0","chunk-773813ee":"63c1a2ed","chunk-f1c0354a":"c6ff1567","chunk-5088bd5d":"97dcc9aa","chunk-56ddeeae":"8ac73576"}[e]+".js"}function d(n){if(c[n])return c[n].exports;var t=c[n]={i:n,l:!1,exports:{}};return e[n].call(t.exports,t,t.exports,d),t.l=!0,t.exports}d.e=function(e){var n=[],t={"chunk-238c903c":1,"chunk-26600eb3":1,"chunk-773813ee":1,"chunk-f1c0354a":1,"chunk-5088bd5d":1,"chunk-56ddeeae":1};r[e]?n.push(r[e]):0!==r[e]&&t[e]&&n.push(r[e]=new Promise((function(n,t){for(var c="static/css/"+({}[e]||e)+"."+{"chunk-238c903c":"3c7f5ad9","chunk-26600eb3":"c58e968f","chunk-2d0c8bf7":"31d6cfe0","chunk-2d0cfaef":"31d6cfe0","chunk-2d0d0f79":"31d6cfe0","chunk-2d0e4b0c":"31d6cfe0","chunk-2d0e4e1f":"31d6cfe0","chunk-2d0e944c":"31d6cfe0","chunk-2d2104c6":"31d6cfe0","chunk-2d226cab":"31d6cfe0","chunk-2d229205":"31d6cfe0","chunk-3dcd0324":"31d6cfe0","chunk-773813ee":"2f2cd74f","chunk-f1c0354a":"f6fb1da4","chunk-5088bd5d":"9a9361c6","chunk-56ddeeae":"94702ff7"}[e]+".css",u=d.p+c,o=document.getElementsByTagName("link"),a=0;a<o.length;a++){var f=o[a],i=f.getAttribute("data-href")||f.getAttribute("href");if("stylesheet"===f.rel&&(i===c||i===u))return n()}var h=document.getElementsByTagName("style");for(a=0;a<h.length;a++){f=h[a],i=f.getAttribute("data-href");if(i===c||i===u)return n()}var l=document.createElement("link");l.rel="stylesheet",l.type="text/css",l.onload=n,l.onerror=function(n){var c=n&&n.target&&n.target.src||u,o=new Error("Loading CSS chunk "+e+" failed.\n("+c+")");o.code="CSS_CHUNK_LOAD_FAILED",o.request=c,delete r[e],l.parentNode.removeChild(l),t(o)},l.href=u;var s=document.getElementsByTagName("head")[0];s.appendChild(l)})).then((function(){r[e]=0})));var c=u[e];if(0!==c)if(c)n.push(c[2]);else{var o=new Promise((function(n,t){c=u[e]=[n,t]}));n.push(c[2]=o);var f,i=document.createElement("script");i.charset="utf-8",i.timeout=120,d.nc&&i.setAttribute("nonce",d.nc),i.src=a(e);var h=new Error;f=function(n){i.onerror=i.onload=null,clearTimeout(l);var t=u[e];if(0!==t){if(t){var c=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;h.message="Loading chunk "+e+" failed.\n("+c+": "+r+")",h.name="ChunkLoadError",h.type=c,h.request=r,t[1](h)}u[e]=void 0}};var l=setTimeout((function(){f({type:"timeout",target:i})}),12e4);i.onerror=i.onload=f,document.head.appendChild(i)}return Promise.all(n)},d.m=e,d.c=c,d.d=function(e,n,t){d.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:t})},d.r=function(e){"undefined"!==typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},d.t=function(e,n){if(1&n&&(e=d(e)),8&n)return e;if(4&n&&"object"===typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(d.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&n&&"string"!=typeof e)for(var c in e)d.d(t,c,function(n){return e[n]}.bind(null,c));return t},d.n=function(e){var n=e&&e.__esModule?function(){return e["default"]}:function(){return e};return d.d(n,"a",n),n},d.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},d.p="/",d.oe=function(e){throw console.error(e),e};var f=window["webpackJsonp"]=window["webpackJsonp"]||[],i=f.push.bind(f);f.push=n,f=f.slice();for(var h=0;h<f.length;h++)n(f[h]);var l=i;t()})([]);</script><script src=/static/js/chunk-elementUI.cb459a4a.js></script><script src=/static/js/chunk-libs.47b8d5ae.js></script><script src=/static/js/app.31166acd.js></script></body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+<meta name="description" content="吴晓伟 · 大模型算法工程师 · NLP · 多模态 · 国产化算子适配 — 7 年算法工程经验，1 年管理经验，深耕垂直行业大模型研发与昇腾/海光国产化适配。">
+<meta name="author" content="吴晓伟 (modderbug)">
+<link rel="icon" href="/favicon.ico">
+<title>吴晓伟 | 大模型算法工程师 — modderbug@wu-xiaowei</title>
+<link rel="stylesheet" href="/static/css/geek.css">
+</head>
+<body>
+
+<!-- ═══════════ 背景层：矩阵雨 + 网格 + 扫描线 ═══════════ -->
+<div class="bg-matrix" aria-hidden="true"><canvas id="matrix-rain"></canvas></div>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-scanlines" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<!-- ═══════════ 顶部终端导航 ═══════════ -->
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand" href="#hero">
+      <span class="prompt-symbol">➜</span>
+      <span class="brand-path">~/wu-xiaowei</span>
+      <span class="brand-branch">(main)⚡</span>
+    </a>
+    <nav class="topbar-nav" id="topbar-nav" aria-label="站点导航">
+      <a href="#profile" data-nav="profile">[ 个人信息 ]</a>
+      <a href="#skills" data-nav="skills">[ 核心技能 ]</a>
+      <a href="#experience" data-nav="experience">[ 工作经历 ]</a>
+      <a href="#projects" data-nav="projects">[ 项目经验 ]</a>
+      <a href="#education" data-nav="education">[ 教育 ]</a>
+      <a href="#honors" data-nav="honors">[ 荣誉 ]</a>
+      <a href="#contact" data-nav="contact">[ 联系 ]</a>
+    </nav>
+    <button class="topbar-toggle" id="nav-toggle" aria-label="切换导航" aria-expanded="false">☰</button>
+  </div>
+  <div class="topbar-status" id="topbar-status">STATUS: <span class="blink">▮</span> SYSTEM ONLINE</div>
+</header>
+
+<main class="shell">
+
+  <!-- ═══════════ HERO：终端开机画面 ═══════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-badge">
+      <span class="badge-dot"></span> OPEN TO WORK · LLM ENGINEER · CN-CORE ADAPTATION
+    </div>
+
+    <h1 class="hero-name">
+      <span class="hero-name-en" aria-hidden="true">WU&nbsp;XIAOWEI</span>
+      <span class="hero-name-cn">吴晓伟</span>
+    </h1>
+    <p class="hero-title">大模型算法工程师 <em>·</em> NLP <em>·</em> 多模态 <em>·</em> 国产化算子适配</p>
+    <p class="hero-slogan">把大模型钉在昇腾与海光上 —— 训练、部署、量化、KV-Cache 压缩，全流程 <span class="hl">0 妥协</span>。</p>
+
+    <div class="terminal" id="hero-terminal" role="img" aria-label="终端开机画面演示">
+      <div class="term-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="term-title">modderbug@wu-xiaowei: ~ — zsh</span>
+      </div>
+      <div class="term-body" id="term-body">
+        <div class="term-line" data-type="0.25" data-pause="400"> <span class="t-prompt">➜&nbsp;~</span> whoami</div>
+        <div class="term-line" data-type="0.02" data-pause="200"> <span class="t-out">吴晓伟 — 大模型算法工程师 · 7 年算法工程 / 1 年管理</span></div>
+        <div class="term-line" data-type="0.25" data-pause="300"> <span class="t-prompt">➜&nbsp;~</span> cat role.txt</div>
+        <div class="term-line" data-type="0.02" data-pause="200"> <span class="t-out">LLM 训练 → SFT → RLHF/DPO/GRPO 全链路 · 昇腾 NPU / 海光 DCU 适配</span></div>
+        <div class="term-line" data-type="0.25" data-pause="300"> <span class="t-prompt">➜&nbsp;~</span> ./deploy --target npu --model 72B --quant int4</div>
+        <div class="term-line" data-type="0.02" data-pause="200"> <span class="t-out">[OK] DeepSeek 1.5B~32B · Qwen2.5-72B · GLM4-9B · LLAMA3.1 — 4 个客户环境交付</span></div>
+        <div class="term-line" data-type="0.25" data-pause="300"> <span class="t-prompt">➜&nbsp;~</span> ./scan --threat-level</div>
+        <div class="term-line" data-type="0.02" data-pause="400"> <span class="t-out">[WARN] 当前职场竞争压力过高，建议立刻 hire 本工程师。</span></div>
+        <div class="term-line" data-type="0.25" data-pause="0"> <span class="t-prompt">➜&nbsp;~</span><span class="t-cursor">&nbsp;▮</span></div>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#projects">▸ 查看项目战绩</a>
+      <a class="btn btn-ghost" href="#contact">▸ 发起联系</a>
+      <a class="btn btn-ghost" href="mailto:wxw.smile.ex@gmail.com" aria-label="发邮件">▸ mail</a>
+    </div>
+  </section>
+
+  <!-- ═══════════ 个人信息 ═══════════ -->
+  <section class="block" id="profile" data-block>
+    <header class="block-head">
+      <span class="block-idx">01</span>
+      <h2 class="block-title"><span class="hash">#</span> 个人信息 <span class="block-cmd">$ cat profile.json</span></h2>
+    </header>
+    <div class="block-body">
+      <div class="terminal term-inline">
+        <div class="term-bar"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="term-title">profile.json</span></div>
+        <div class="term-body json-body">
+          <pre>{
+  "name"        : "吴晓伟",
+  "gender"      : "男",
+  "age"         : 29,
+  "experience"  : "7 年（含 1 年管理）",
+  "phone"       : "15210908048 (V)",
+  "qq"          : "810237976",
+  "email"       : "wxw.smile.ex@gmail.com",
+  "location"    : "北京",
+  "open_to"     : [ "大模型算法", "NLP 算法", "多模态算法" ]
+}</pre>
+        </div>
+      </div>
+      <div class="profile-intent">
+        <h3 class="sub-title"><span class="hash">#</span> 求职意向</h3>
+        <p>
+          大模型算法工程师 / NLP 算法工程师 / 多模态算法工程师。7 年算法工程经验、1 年管理经验；
+          深耕垂直行业大模型（法务 / 军工 / 政企）研发与国产化算子适配；精通 DeepSpeed、FSDP、LoRA / QLoRA 等主流微调框架，
+          主导过 1.5B / 7B / 14B / 32B / 72B 多尺寸大模型在昇腾 NPU、海光 DCU 上的
+          <span class="hl">训练 – 部署 – 量化 – KV-Cache 压缩</span> 全流程；
+          具备 LLM 继续预训练 → SFT → <span class="hl">RLHF/DPO/GRPO</span> 对齐全链路工程经验，熟练使用 claude / opencode 等 AI IDE。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 核心技能 ═══════════ -->
+  <section class="block" id="skills" data-block>
+    <header class="block-head">
+      <span class="block-idx">02</span>
+      <h2 class="block-title"><span class="hash">#</span> 核心技能 <span class="block-cmd">$ cat skills.yml</span></h2>
+    </header>
+    <div class="block-body">
+      <div class="skill-grid">
+
+        <article class="skill-card">
+          <h3 class="skill-name"><span class="skill-arrow">▸</span> LLM 技术</h3>
+          <p class="skill-desc">Transformer / GPT / LLaMA / Qwen / DeepSeek / GLM 架构；继续预训练 → SFT → RLHF/DPO/GRPO 全链路；PEFT：LoRA、QLoRA、P-Tuning v2、Prefix-Tuning、Adapter；复现过 RoPE / RMSNorm / FlashAttention-2 改造；Triton 算子融合；Llama-Factory / OpenCompass / Evalscope 评测。</p>
+          <div class="chips"><span>RoPE</span><span>RMSNorm</span><span>FlashAttn-2</span><span>LoRA</span><span>QLoRA</span><span>GRPO</span></div>
+        </article>
+
+        <article class="skill-card">
+          <h3 class="skill-name"><span class="skill-arrow">▸</span> LLM 工程化</h3>
+          <p class="skill-desc">DeepSpeed ZeRO-1/2/3、ZeRO-Infinity、FSDP、Megatron-LM、Accelerate、ColossalAI；训练栈 PyTorch + HF Transformers + PEFT + BitsAndBytes；推理引擎 vLLM、ONNX-Runtime、llama.cpp；全流程量化 GPTQ / AWQ / Int4 / Int8 / FP16；硬件 4×A100、Ascend 910B3、310P、海光 DCU 多平台交付。</p>
+          <div class="chips"><span>DeepSpeed</span><span>FSDP</span><span>Megatron-LM</span><span>vLLM</span><span>GPTQ</span><span>AWQ</span></div>
+        </article>
+
+        <article class="skill-card skill-card-hot">
+          <h3 class="skill-name"><span class="skill-arrow">▸</span> 国产化算子适配 <span class="hot-tag">★ CORE</span></h3>
+          <p class="skill-desc">昇腾 NPU：CANN / MindSpore / MindSpore Lite / MindIR / Ascend 910B3 / 310P；海光 DCU：ROCm / HYGON 大模型训练与推理；已适配 DeepSeek 1.5B / 7B / 14B / 32B（ARM+X86 双架构，4 个客户环境交付）、LLAMA3.1、Qwen2.5-72B、GLM4-9B；调研寒武纪 / 摩尔线程 / 端侧 SoC；PyTorch / Paddle (OCR / UIE) NPU 加速、FlashMLA 算子融合；具有华为 HCIA-AI 认证。</p>
+          <div class="chips"><span>CANN</span><span>MindSpore</span><span>ROCm</span><span>HYGON</span><span>MindIR</span><span>FlashMLA</span></div>
+        </article>
+
+        <article class="skill-card">
+          <h3 class="skill-name"><span class="skill-arrow">▸</span> 数据工程 &amp; 跨模态</h3>
+          <p class="skill-desc">数据中台：MinerU（PDF→MD→DOCX）全链路、Spark / Pandas、特征工程、百亿组合 softmax（&lt;8GB）；知识图谱：Neo4j、Seraph 引擎一键切换、三元组向量化、多图谱并发、≥6 项目复用；RAG：Milvus / FAISS / ElasticSearch + LangChain / LlamaIndex / Dify / Coze Agent；多模态：CLIP / BLIP、echomimicv2 数字人、YOLOv5/v8/v10、Unet / PPOCRv4。</p>
+          <div class="chips"><span>MinerU</span><span>Neo4j</span><span>Milvus</span><span>LangChain</span><span>CLIP</span><span>YOLOv10</span></div>
+        </article>
+
+        <article class="skill-card">
+          <h3 class="skill-name"><span class="skill-arrow">▸</span> ML 经典建模</h3>
+          <p class="skill-desc">XGBoost / LightGBM / FastText、CRF + NER、Bayes；RoBERTa 改进（RoPE + RMSNorm + Flash-Attn2 → 法务 F1 95→97，沉淀 1500 亿 token）；UIE 信息抽取（Doccano + 实体替换 + ONNX FP16）；5 个文本分类 + 2 个文本纠错 + 1 个图像分割模型 NPU 加速；图算法与启发式搜索实战（A*、D*、DWA、Reeds-Shepp、STA*）。</p>
+          <div class="chips"><span>XGBoost</span><span>LightGBM</span><span>CRF/NER</span><span>UIE</span><span>RoBERTa</span><span>STA*</span></div>
+        </article>
+
+        <article class="skill-card">
+          <h3 class="skill-name"><span class="skill-arrow">▸</span> 计算机基础</h3>
+          <p class="skill-desc">精通 Python、Nodejs、Java、Docker、Unix 操作系统、Shell 等全栈基本技能；熟练使用 MySQL、Redis、Nginx、Tomcat 等服务器及相应中间件；熟悉 HTTP 协议、TCP/IP 协议、计算机网络、服务器软硬件。</p>
+          <div class="chips"><span>Python</span><span>Node.js</span><span>Java</span><span>Docker</span><span>Shell</span><span>MySQL</span><span>Redis</span></div>
+        </article>
+
+      </div>
+
+      <div class="terminal term-inline term-tags">
+        <div class="term-bar"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="term-title">techstack — stream</span></div>
+        <div class="term-body tag-stream" id="tag-stream"><span class="t-prompt">➜</span> <span class="t-out"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 工作经历 ═══════════ -->
+  <section class="block" id="experience" data-block>
+    <header class="block-head">
+      <span class="block-idx">03</span>
+      <h2 class="block-title"><span class="hash">#</span> 工作经历 <span class="block-cmd">$ history --timeline</span></h2>
+    </header>
+    <div class="block-body">
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-card">
+            <div class="tl-time">2024/07 – 至今</div>
+            <h3 class="tl-org">渊亭信息科技有限公司 <span class="tl-tag">军工领域头部企业</span></h3>
+            <div class="tl-role">智能算法部 · 中级算法工程师 <span class="tl-level">P2</span></div>
+            <p class="tl-desc">207 项目算法核心，主导 12 个 AI 子模块端到端交付；具备 TL 经验，带领 4 人小组统筹排期、技术选型与进度管理；12 次客户现场演示 0 故障，3 轮出厂验收一次通过。</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-card">
+            <div class="tl-time">2023/12 – 2024/07</div>
+            <h3 class="tl-org">卓望信息科技(北京)有限公司</h3>
+            <div class="tl-role">AI 创新部 · 中级算法工程师</div>
+            <p class="tl-desc">主导法务领域大模型（生成式合同智能起草 + FlashBERT）与知识图谱/RAG 平台，多年持续迭代并稳定运行于中国移动法务生产环境。</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-card">
+            <div class="tl-time">2020/06 – 2023/12</div>
+            <h3 class="tl-org">卓望信息科技(北京)有限公司</h3>
+            <div class="tl-role">架构算法部 · 算法工程师</div>
+            <p class="tl-desc">深耕 NLP 与多模态：RoBERTa 结构改造、UIE 信息抽取、5 分类 + 2 纠错 + 1 图像分割模型 NPU 加速，图算法与启发式搜索实战（A*、D*、DWA、Reeds-Shepp、STA*）。</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-card">
+            <div class="tl-time">2020/03 – 2020/06</div>
+            <h3 class="tl-org">卓望信息科技(北京)有限公司</h3>
+            <div class="tl-role">研发中心 / 研发部 · 实习生</div>
+            <p class="tl-desc">算法实习生起步，参与研发中心 AI 项目，完成从校园到工业级算法工程的转型。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 项目经验 ═══════════ -->
+  <section class="block" id="projects" data-block>
+    <header class="block-head">
+      <span class="block-idx">04</span>
+      <h2 class="block-title"><span class="hash">#</span> 项目经验 <span class="block-cmd">$ ls -la ./projects</span></h2>
+    </header>
+    <div class="block-body">
+      <div class="proj-list">
+
+        <article class="proj-card" data-proj>
+          <div class="proj-head">
+            <span class="proj-num">P01</span>
+            <h3 class="proj-title">军工垂直行业大模型工程化平台 <span class="proj-org">渊亭 · 207 所项目</span></h3>
+            <span class="proj-status">[DEPLOYED]</span>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-role">核心算法工程师 · 12 个 AI 子模块端到端交付</span>
+            <div class="chips chips-sm"><span>DeepSpeed</span><span>ZeRO2</span><span>QLoRA</span><span>RLHF/DPO</span><span>vLLM</span><span>llama.cpp</span><span>OpenCompass</span><span>FlashAttention-2</span></div>
+          </div>
+          <ul class="proj-points">
+            <li>面向军工装备识别、装备知识问答等垂直场景，负责大模型 <b>数据清洗 → 继续预训练 → SFT → DPO</b> 对齐全链路；统一采用 DeepSpeed ZeRO2 + QLoRA 训练，vLLM / llama.cpp 部署，最终在 <b>NPU 完成适配</b>。</li>
+            <li>模型层完成跨模态视频理解、YOLOv10 装备识别、BGE / M3E 图谱问答、blip / clip 图文匹配、PaddleOCR v4、视频人脸识别等模型封装与 NPU 适配；通过 <b>GPTQ Int4 量化 + vLLM</b> 部署。</li>
+          </ul>
+        </article>
+
+        <article class="proj-card" data-proj>
+          <div class="proj-head">
+            <span class="proj-num">P02</span>
+            <h3 class="proj-title">法务领域大模型 <span class="proj-org">中国移动研究院 · 生成式合同智能起草 + FlashBERT</span></h3>
+            <span class="proj-status">[PROD]</span>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-role">项目全流程负责人 / TL · 多年持续迭代</span>
+            <div class="chips chips-sm"><span>Transformers</span><span>PEFT</span><span>QLoRA</span><span>Llama-Factory</span><span>RoBERTa</span><span>UIE</span><span>ONNX</span><span>Spring Boot</span><span>HanLP</span></div>
+          </div>
+          <ul class="proj-points">
+            <li>微调：4×A100 + ZeRO2 + QLoRA；OpenCompass 全方位评估（cmmlu / ceval / gsm8k / mmlu）；GPTQ Int4 量化 + vLLM 部署，<b>稳定运行于中国移动法务生产环境</b>。</li>
+            <li>模型改造：RoBERTa 替换 RoPE 位置编码 + RMSNorm + Flash-Attention 2，50+ 标签法务分类 <b>F1 95 → 97</b>，沉淀 1500 亿 token 领域语料。</li>
+            <li>信息抽取：Doccano + UIE，5k+ 长文本序列标注，fasttext + 滑动窗口 + 索引恢复，ONNX FP16 跨平台部署；合同 AI 平台（Spring Boot + HanLP + CRF/NER）审查点 <b>F1 98%+</b>。</li>
+          </ul>
+        </article>
+
+        <article class="proj-card" data-proj>
+          <div class="proj-head">
+            <span class="proj-num">P03</span>
+            <h3 class="proj-title">军工 RAG 智能问答平台 <span class="proj-org">电科院 · 智海院 · 陆研院</span></h3>
+            <span class="proj-status">[MULTI-SITE]</span>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-role">项目负责人 · 多项目复用</span>
+            <div class="chips chips-sm"><span>Neo4j</span><span>Seraph</span><span>BGE</span><span>M3E</span><span>Milvus</span><span>LangChain</span><span>Dify</span><span>Coze</span></div>
+          </div>
+          <ul class="proj-points">
+            <li>设计 <b>Neo4j / Seraph 引擎一键切换</b>的知识图谱框架：三元组向量化、多图谱并发、定时守护；图谱能力在 <b>≥6 个项目复用</b>。</li>
+            <li>基于 BGE / M3E Embedding + 大模型重排构建 RAG 问答系统；实现 0 样本场景下的实体关系抽取与图谱知识融合；引入 Dify / Coze Agent 工作流编排。</li>
+          </ul>
+        </article>
+
+        <article class="proj-card" data-proj>
+          <div class="proj-head">
+            <span class="proj-num">P04</span>
+            <h3 class="proj-title">TB 级 OCR / PDF 并行推理 <span class="proj-org">207 兵器 · 火箭军</span></h3>
+            <span class="proj-status">[6× NPU]</span>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-role">核心算法工程师 · 6 卡 NPU 调优 / 离线交付</span>
+            <div class="chips chips-sm"><span>MinerU</span><span>PaddleOCR v4</span><span>Unet</span><span>PPOCRv4</span><span>TTS</span></div>
+          </div>
+          <ul class="proj-points">
+            <li>6 卡 NPU 轮询负载均衡的 TB 级 OCR 并行流水线：400 MB PDF 处理耗时 <b>45 min → 7 min（6.4× 加速）</b>。</li>
+            <li>MinerU 全链路（PDF → Markdown → DOCX）落地，已在 207 / 电科院 2 个客户环境复用；<b>月数万次调用稳定运行</b>。</li>
+          </ul>
+        </article>
+
+        <article class="proj-card" data-proj>
+          <div class="proj-head">
+            <span class="proj-num">P05</span>
+            <h3 class="proj-title">中船路径规划与调度算法 <span class="proj-org">舰载机甲库出库调度 · 专利落地</span></h3>
+            <span class="proj-status">[PATENT]</span>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-role">算法核心研究员 · 发明专利主要发明人之一</span>
+            <div class="chips chips-sm"><span>Python</span><span>STA*</span><span>Reeds-Shepp</span><span>shapely</span><span>PreparedGeometry</span><span>C++/Python 混合</span></div>
+          </div>
+          <ul class="proj-points">
+            <li>任务飞机从机库 → 机库梯 → 甲板梯 → B 阵位分阶段 STA* + Reeds-Shepp 路径规划；<b>7 个测试 case 全部 0 碰撞通过</b>。</li>
+            <li>静态路径规划 A* 耗时 <b>27 s → 6 s（4.5× 加速）</b>，整体性能优化 <b>3.4×</b>（10×6 case 28 s 端到端回放 0 碰撞）。</li>
+            <li>动态避碰 MVP：多批次隔离、碰撞区域预加载、SSE 实时推送，C++ / Python 混合；graph 双向化、检测姿态 = 输出姿态等多项关键设计落地。</li>
+          </ul>
+        </article>
+
+        <article class="proj-card" data-proj>
+          <div class="proj-head">
+            <span class="proj-num">P06</span>
+            <h3 class="proj-title">舰载机甲库路径规划工具集 <span class="proj-org">graph_demo 算法库</span></h3>
+            <span class="proj-status">[TOOLKIT]</span>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-role">算法研究员 · 独立完成工具集架构</span>
+            <div class="chips chips-sm"><span>A*</span><span>Dijkstra</span><span>Reeds-Shepp</span><span>Bezier</span><span>B-Spline</span><span>DWA</span><span>Flask</span></div>
+          </div>
+          <ul class="proj-points">
+            <li>A* / Dijkstra / Reeds-Shepp / Bezier / B-Spline / DWA 全栈算法工具集，Flask 提供 REST API（/api/v1/path、/generate_graph）。</li>
+            <li>ProcessPoolExecutor 8-worker 并行计算 N×N RS 边（50 节点 ~8 s）；软 / 硬障碍物区分（OBS_COST=1000），多机型独立 graph JSON + C-Python 绑定。</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 教育 + 荣誉 ═══════════ -->
+  <section class="block" id="education" data-block>
+    <header class="block-head">
+      <span class="block-idx">05</span>
+      <h2 class="block-title"><span class="hash">#</span> 教育经历 <span class="block-cmd">$ cat edu.log</span></h2>
+    </header>
+    <div class="block-body">
+      <div class="edu-card">
+        <div class="edu-time">2016 – 2020</div>
+        <div class="edu-main">
+          <h3>北京石油化工学院 <span class="tl-tag">本科 · 学士学位</span></h3>
+          <p>数理系 · 信息与计算科学</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="honors" data-block>
+    <header class="block-head">
+      <span class="block-idx">06</span>
+      <h2 class="block-title"><span class="hash">#</span> 科研成果与荣誉 <span class="block-cmd">$ cat honors.md</span></h2>
+    </header>
+    <div class="block-body">
+      <ul class="honor-list">
+        <li><span class="honor-tag">[认证]</span> HCIA-AI 华为认证工程师；《昇腾大模型部署最佳实践》内部手册。</li>
+        <li><span class="honor-tag">[分享]</span> 内部分享 2 场：《NPU 大模型实践案例分享》、《大模型算子融合：FlashMLA》。</li>
+        <li><span class="honor-tag">[认证]</span> 中国移动 IT 能力认证 AI 高级专项技能。</li>
+        <li><span class="honor-tag">[荣誉]</span> 中国移动卓越工程师。</li>
+        <li><span class="honor-tag">[认证]</span> 中国移动 IT 能力认证 AI 专业级 / 助理级技能。</li>
+        <li><span class="honor-tag">[竞赛]</span> 全国大学生数学建模竞赛北京赛区二等奖。</li>
+        <li><span class="honor-tag">[竞赛]</span> 互联网+ 大学生创新创业大赛北京市三等奖。</li>
+        <li><span class="honor-tag">[证书]</span> 基于 Azure 微信选课模型 URT 证书；基于半导体制冷片的空调项目 URT 证书。</li>
+        <li><span class="honor-tag">[竞赛]</span> 北京市物理实验竞赛《基于半导体制冷片的 CPU 散热系统》市二等奖。</li>
+        <li><span class="honor-tag">[证书]</span> 通过英语四级。</li>
+      </ul>
+      <div class="terminal term-inline term-matrix-art" aria-hidden="true">
+        <div class="term-bar"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="term-title">~/.bashrc — MOTD</span></div>
+        <div class="term-body"><pre>███████╗██╗  ██╗██╗██████╗ ███████╗
+██╔════╝╚██╗██╔╝██║██╔══██╗██╔════╝
+█████╗   ╚███╔╝ ██║██████╔╝█████╗
+██╔══╝   ██╔██╗ ██║██╔═══╝ ██╔══╝
+███████╗██╔╝ ██╗██║██║     ███████╗
+╚══════╝╚═╝  ╚═╝╚═╝╚═╝     ╚══════╝</pre></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 联系 ═══════════ -->
+  <section class="block" id="contact" data-block>
+    <header class="block-head">
+      <span class="block-idx">07</span>
+      <h2 class="block-title"><span class="hash">#</span> 发起联系 <span class="block-cmd">$ nc -v hire.me 443</span></h2>
+    </header>
+    <div class="block-body">
+      <div class="contact-grid">
+        <a class="contact-card" href="tel:15210908048">
+          <span class="contact-icon">📱</span>
+          <span class="contact-label">PHONE / V</span>
+          <span class="contact-value">15210908048</span>
+        </a>
+        <a class="contact-card" href="mailto:wxw.smile.ex@gmail.com">
+          <span class="contact-icon">✉</span>
+          <span class="contact-label">EMAIL</span>
+          <span class="contact-value">wxw.smile.ex@gmail.com</span>
+        </a>
+        <div class="contact-card">
+          <span class="contact-icon">💬</span>
+          <span class="contact-label">QQ</span>
+          <span class="contact-value">810237976</span>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">⚡</span>
+          <span class="contact-label">STACK</span>
+          <span class="contact-value">LLM · NPU · RAG · MLLM</span>
+        </div>
+      </div>
+      <div class="contact-note">
+        <span class="t-prompt">➜&nbsp;~</span> echo "7 年磨一剑 · 国产化适配全栈 · 到岗即战" | cowsay -f tux
+        <div class="ascii-cow">
+╭──────────────────────────────────╮
+│ 7 年磨一剑 · 国产化适配全栈 · 到岗即战 │
+╰──────────────────────────────────╯
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 页脚 ═══════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2026 WU XIAOWEI · modderbug@wu-xiaowei</span>
+      <span class="footer-cmd">$ uptime — 开机 7 年，永不停机，等你来 hire。</span>
+      <span class="footer-cmd">POWERED BY <span class="hl">LLM + NPU + ☕</span></span>
+    </div>
+  </footer>
+
+</main>
+
+<script src="/static/js/geek.js"></script>
+</body>
+</html>
